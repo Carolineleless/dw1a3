@@ -27,7 +27,7 @@ const checkEndGame = () => {
 
   if (disabledCards.length === 12) {
     clearInterval(this.loop);
-    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}segundos. `);
+    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML} segundos. `);
   }
 };
 
@@ -47,7 +47,7 @@ const checkCards = () => {
 
     setTimeout(() => {
       checkEndGame(); 
-    }, 100);
+    }, 300);
   } else {
     setTimeout(() => {
       firstCard.classList.remove('reveal-card');
