@@ -45,7 +45,9 @@ const checkCards = () => {
     firstCard = '';
     secondCard = '';
 
-    checkEndGame();
+    setTimeout(() => {
+      checkEndGame(); 
+    }, 100);
   } else {
     setTimeout(() => {
       firstCard.classList.remove('reveal-card');
